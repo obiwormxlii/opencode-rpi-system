@@ -1,0 +1,46 @@
+# RPI System - Repository .gitignore
+
+# Ephemeral data (should not be in base config repo)
+.tmp/
+
+# OpenCode user-specific files
+token.json
+credentials.json
+
+# Node modules (if any)
+node_modules/
+package-lock.json
+bun.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# Keep these directories but ignore their contents (except README)
+.opencode/*
+!.opencode/standards/

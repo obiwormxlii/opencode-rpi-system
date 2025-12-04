@@ -1,0 +1,151 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  
+  "agent": {
+    "research": {
+      "description": "Explore codebase and document findings",
+      "mode": "subagent",
+      "model": "anthropic/claude-opus-4-5",
+      "temperature": 0.1,
+      "prompt": "{file:~/.config/opencode/prompt/research.txt}",
+      "tools": {
+        "read": true,
+        "grep": true,
+        "glob": true,
+        "webfetch": true,
+        "write": true,
+        "edit": false,
+        "bash": false
+      }
+    },
+    
+    "planner": {
+      "description": "Create detailed implementation plans",
+      "mode": "subagent",
+      "model": "anthropic/claude-sonnet-4-5",
+      "temperature": 0.1,
+      "prompt": "{file:~/.config/opencode/prompt/plan.txt}",
+      "tools": {
+        "read": true,
+        "grep": true,
+        "glob": true,
+        "webfetch": false,
+        "write": true,
+        "edit": false,
+        "bash": false,
+        "todowrite": true,
+        "todoread": false
+      }
+    },
+    
+    "implement": {
+      "description": "Execute implementation plans",
+      "mode": "primary",
+      "model": "anthropic/claude-sonnet-4-5",
+      "temperature": 0.2,
+      "tools": {
+        "read": true,
+        "grep": true,
+        "glob": true,
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "todowrite": true,
+        "todoread": true
+      }
+    },
+    
+    "verify": {
+      "description": "Validate code against standards (BLOCKING)",
+      "mode": "subagent",
+      "model": "anthropic/claude-opus-4-5",
+      "temperature": 0.1,
+      "prompt": "{file:~/.config/opencode/prompt/verify-standards.txt}",
+      "permission": {
+        "bash": {
+          "npm test": "allow",
+          "npm run test": "allow",
+          "python -m pytest": "allow",
+          "pytest": "allow",
+          "python -m mypy": "allow",
+          "mypy": "allow",
+          "python -m pylint": "allow",
+          "pylint": "allow",
+          "npm run lint": "allow",
+          "npm run type-check": "allow",
+          "tsc --noEmit": "allow",
+          "*": "deny"
+        },
+        "edit": "deny",
+        "webfetch": "deny"
+      },
+      "tools": {
+        "read": true,
+        "grep": true,
+        "glob": true,
+        "bash": true,
+        "write": true,
+        "edit": false,
+        "webfetch": false
+      }
+    },
+    
+    "explore": {
+      "description": "Fast codebase exploration",
+      "mode": "subagent",
+      "model": "anthropic/claude-haiku-4-5",
+      "temperature": 0.1,
+      "tools": {
+        "read": true,
+        "grep": true,
+        "glob": true,
+        "webfetch": false,
+        "write": false,
+        "edit": false,
+        "bash": false
+      }
+    }
+  },
+  
+  "command": {
+    "rpi": {
+      "description": "Research → Plan → Implement workflow",
+      "agent": "build",
+      "template": "I'll help you implement changes using the Research → Plan → Implement methodology.\n\nThis workflow:\n1. **Research**: Understand the codebase and what needs to change\n2. **Plan**: Create a detailed, atomic implementation plan\n3. **Implement**: Execute the plan step-by-step\n4. **Verify**: Validate against standards (blocking on critical issues)\n\nWhat would you like to implement or fix?\n\nPlease describe:\n- What feature/fix you want\n- Why it's important\n- Any constraints or context we should know"
+    },
+    
+    "research": {
+      "description": "Analyze codebase and create research snapshot",
+      "agent": "research",
+      "subtask": true,
+      "template": "I'll analyze the codebase to understand: $ARGUMENTS\n\nCreating a research snapshot that documents relevant files, patterns, integration points, and dependencies.\n\nResearch will be saved to `.tmp/research/current-research.md`"
+    },
+    
+    "planner": {
+      "description": "Create implementation plan",
+      "agent": "planner",
+      "subtask": true,
+      "template": "I'll create a detailed implementation plan for: $ARGUMENTS\n\nThe plan will include atomic phases, file paths, code snippets, test strategies, and rollback procedures.\n\nPlan will be saved to `.tmp/plans/current-plan.md`\n\nEach phase will become a todo item for tracking progress."
+    },
+    
+    "implement": {
+      "description": "Execute implementation plan",
+      "agent": "implement",
+      "template": "I'll execute the plan step-by-step, marking progress in the todo list.\n\nFirst, let me check for any CRITICAL issues in the verification report.\n\nReady to begin?"
+    },
+    
+    "verify": {
+      "description": "Validate code against standards",
+      "agent": "verify",
+      "subtask": true,
+      "template": "I'll verify the implementation against SOLID principles, security standards, type safety, and project guidelines.\n\nVerification report will be saved to `.tmp/verification/latest-report.md`\n\nCRITICAL issues will BLOCK implementation until fixed."
+    },
+    
+    "compact": {
+      "description": "Compress context into research snapshot",
+      "agent": "research",
+      "subtask": true,
+      "template": "I'll compress our conversation into a research snapshot for continuity.\n\nUse this when context gets long or switching to a new topic."
+    }
+  }
+}
