@@ -5,7 +5,7 @@
     "research": {
       "description": "Explore codebase and document findings",
       "mode": "subagent",
-      "model": "anthropic/claude-opus-4-5",
+      "model": "xai/grok-code-fast-1",
       "temperature": 0.1,
       "prompt": "{file:~/.config/opencode/prompt/research.txt}",
       "tools": {
@@ -22,7 +22,7 @@
     "planner": {
       "description": "Create detailed implementation plans",
       "mode": "subagent",
-      "model": "anthropic/claude-sonnet-4-5",
+      "model": "xai/grok-code-fast-1",
       "temperature": 0.1,
       "prompt": "{file:~/.config/opencode/prompt/plan.txt}",
       "tools": {
@@ -58,7 +58,7 @@
     "verify": {
       "description": "Validate code against standards (BLOCKING)",
       "mode": "subagent",
-      "model": "anthropic/claude-opus-4-5",
+      "model": "xai/grok-code-fast-1",
       "temperature": 0.1,
       "prompt": "{file:~/.config/opencode/prompt/verify-standards.txt}",
       "permission": {
@@ -93,7 +93,7 @@
     "explore": {
       "description": "Fast codebase exploration",
       "mode": "subagent",
-      "model": "anthropic/claude-haiku-4-5",
+      "model": "xai/grok-code-fast-1",
       "temperature": 0.1,
       "tools": {
         "read": true,
@@ -109,7 +109,7 @@
     "project-architect": {
       "description": "Guide greenfield project initialization through structured interview",
       "mode": "subagent",
-      "model": "anthropic/claude-opus-4-5",
+      "model": "xai/grok-code-fast-1",
       "temperature": 0.3,
       "prompt": "{file:~/.config/opencode/prompt/project-architect.txt}",
       "tools": {
@@ -128,7 +128,7 @@
     "project-archaeologist": {
       "description": "Analyze existing codebase and reverse-engineer architecture docs",
       "mode": "subagent",
-      "model": "anthropic/claude-opus-4-5",
+      "model": "xai/grok-code-fast-1",
       "temperature": 0.1,
       "prompt": "{file:~/.config/opencode/prompt/project-archaeologist.txt}",
       "tools": {
@@ -147,7 +147,7 @@
     "project-manager": {
       "description": "Track and update project progress, manage task completion",
       "mode": "subagent",
-      "model": "anthropic/claude-sonnet-4-5",
+      "model": "xai/grok-code-fast-1",
       "temperature": 0.1,
       "prompt": "{file:~/.config/opencode/prompt/project-manager.txt}",
       "tools": {
