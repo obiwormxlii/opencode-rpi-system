@@ -28,17 +28,26 @@ opencode
 
 ## Features
 
-✅ **5 Specialized Agents**
+✅ **Project Initialization System** 🆕
+- `/project-init` - Initialize comprehensive project structure
+- **Greenfield**: Guided interview creates architecture docs, roadmap, and epics
+- **Brownfield**: Analyzes existing codebase and generates documentation
+- **Auto-tracking**: Progress updates based on git commits
+- See [Project Init Guide](docs/PROJECT_INIT_GUIDE.md)
+
+✅ **6 Specialized Agents**
+- Project-Architect (Opus 4.5) - Greenfield project initialization 🆕
 - Research (Opus 4.5) - Deep codebase understanding
 - Planner (Sonnet 4.5) - Atomic implementation plans
 - Implement (Sonnet 4.5) - Step-by-step execution
 - Verify (Opus 4.5) - Standards validation with BLOCKING
 - Explore (Haiku 4.5) - Fast exploration
 
-✅ **6 Custom Commands**
-- `/rpi` - Full Research → Plan → Implement workflow
-- `/research` - Analyze codebase and create research snapshot
-- `/planner` - Create detailed implementation plan
+✅ **7 Custom Commands**
+- `/project-init` - Initialize project structure (new or existing) 🆕
+- `/rpi [description]` - Full Research → Plan → Implement workflow 🔥
+- `/research [topic]` - Analyze codebase and create research snapshot
+- `/planner [task]` - Create detailed implementation plan
 - `/implement` - Execute the implementation plan
 - `/verify` - Validate code against standards
 - `/compact` - Compress context into research snapshot
@@ -93,17 +102,34 @@ opencode
 # Start OpenCode
 opencode
 
-# Run the RPI workflow
-/rpi
+# Run the RPI workflow with arguments (recommended)
+/rpi "Add email verification to user registration"
 
-# Describe your feature
-"Add email verification to user registration"
+# Or run without arguments (interactive mode)
+/rpi
+# Then describe your feature when prompted
 
 # The system will:
 # 1. Research the codebase
 # 2. Create an atomic implementation plan
 # 3. Execute the plan step-by-step
 # 4. Verify against standards (BLOCKS on critical issues)
+```
+
+### Usage Patterns
+
+```bash
+# Detailed feature request
+/rpi "Add user authentication with JWT tokens. Must support refresh tokens and role-based access control"
+
+# Bug fix
+/rpi "Fix memory leak in dashboard component when unmounting"
+
+# Refactoring
+/rpi "Refactor payment processing to use strategy pattern"
+
+# Quick task
+/rpi "Add loading spinner to login button"
 ```
 
 ## Requirements

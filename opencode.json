@@ -168,7 +168,7 @@
     "rpi": {
       "description": "Research → Plan → Implement workflow",
       "agent": "build",
-      "template": "I'll help you implement changes using the Research → Plan → Implement methodology.\n\nThis workflow:\n1. **Research**: Understand the codebase and what needs to change\n2. **Plan**: Create a detailed, atomic implementation plan\n3. **Implement**: Execute the plan step-by-step\n4. **Verify**: Validate against standards (blocking on critical issues)\n\nWhat would you like to implement or fix?\n\nPlease describe:\n- What feature/fix you want\n- Why it's important\n- Any constraints or context we should know"
+      "template": "{file:~/.config/opencode/command/rpi.md}"
     },
     
     "research": {

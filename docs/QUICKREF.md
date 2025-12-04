@@ -2,11 +2,21 @@
 
 ## Commands
 
+### Project Initialization 🆕
+
 | Command | Description | When to Use |
 |---------|-------------|-------------|
-| `/rpi` | Full workflow | Starting a new feature or fix |
-| `/research <topic>` | Research only | Understanding codebase before planning |
-| `/planner <feature>` | Planning only | Creating implementation strategy |
+| `/project-init` | Initialize project structure | First time setup for new or existing projects |
+| `/project-status` | Show current progress | Check what to work on next |
+| `/project-update` | Update tracking manually | After completing tasks |
+
+### RPI Workflow
+
+| Command | Description | When to Use |
+|---------|-------------|-------------|
+| `/rpi [description]` | Full workflow | Starting a new feature or fix 🔥 |
+| `/research [topic]` | Research only | Understanding codebase before planning |
+| `/planner [task]` | Planning only | Creating implementation strategy |
 | `/implement` | Execute plan | After plan is reviewed and approved |
 | `/verify` | Validate code | Checking standards compliance |
 | `/compact` | Compress context | When conversation gets long |
@@ -14,7 +24,7 @@
 ## Workflow
 
 ```
-/rpi → Describe feature/fix
+/rpi "add feature description"
   ↓
 Research phase (automatic)
   ↓
@@ -39,6 +49,7 @@ Review: .tmp/verification/latest-report.md
 
 | Agent | Model | Mode | Purpose |
 |-------|-------|------|---------|
+| **Project-Architect** 🆕 | Opus 4.5 | Subagent | Initialize greenfield projects via interview |
 | **Research** | Opus 4.5 | Subagent | Understand codebase, compress findings |
 | **Plan** | Sonnet 4.5 | Subagent | Create atomic implementation plans |
 | **Implement** | Sonnet 4.5 | Primary | Execute plan step-by-step |
@@ -90,21 +101,52 @@ Critical issues must be fixed:
 ├── prompt/                # System prompts
 └── rules/                 # Blocking criteria
 
-.opencode/                 # Project config
-└── standards/             # Project standards
+.opencode/                 # Project config 🆕
+├── project/               # Project documentation
+│   ├── INDEX.md          # Main navigation
+│   ├── AGENTS.md         # Project instructions
+│   ├── architecture/     # System design docs
+│   └── planning/         # Roadmap & epics
+└── standards/            # Project standards
 
 .tmp/                      # Session data (gitignored)
 ├── research/              # Research snapshots
 ├── plans/                 # Implementation plans
-└── verification/          # Verification reports
+├── verification/          # Verification reports
+└── project-init/         # Project init working data
 ```
 
 ## Common Tasks
 
+### Initialize New Project 🆕
+```
+/project-init
+# Choose: greenfield
+# Answer interview questions
+# Review generated structure
+```
+
+### Initialize Existing Project 🆕
+```
+/project-init
+# Choose: brownfield
+# Wait for codebase analysis
+# Review and refine findings
+```
+
+### Check Project Status 🆕
+```
+/project-status
+# See current epic, phase, task
+# View next recommended work
+```
+
 ### Start New Feature
 ```
-/rpi
-"Add user profile page with edit functionality"
+/rpi "Add user profile page with edit functionality"
+
+# Or with more detail
+/rpi "Add user profile page with edit functionality. Must support avatar upload, bio editing, and profile visibility settings"
 ```
 
 ### Understand Existing Code
@@ -197,14 +239,8 @@ opencode
 # Navigate to project
 cd /path/to/project
 
-# Run RPI workflow
-/rpi
-
-# Describe feature
-"Add email verification to user registration.
-Users should receive an email with a verification link.
-After clicking, their account is activated.
-Add verification check on login to prevent unverified users from accessing the app."
+# Run RPI workflow with description
+/rpi "Add email verification to user registration. Users should receive an email with a verification link. After clicking, their account is activated. Add verification check on login to prevent unverified users from accessing the app."
 
 # System runs Research → Plan → Implement → Verify
 # Review each phase in .tmp/
