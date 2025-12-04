@@ -16,7 +16,7 @@ The RPI system operationalizes the concepts from Dex's "12 Factor Agents" talk, 
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/opencode-rpi-system.git
+git clone https://github.com/obiwormxlii/opencode-rpi-system.git
 
 # Copy to OpenCode config directory
 cp -r opencode-rpi-system/* ~/.config/opencode/
@@ -118,7 +118,7 @@ opencode
 
 ```bash
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/opencode-rpi-system.git
+git clone https://github.com/obiwormxlii/opencode-rpi-system.git
 cd opencode-rpi-system
 
 # Copy to OpenCode config directory
@@ -132,7 +132,7 @@ ls ~/.config/opencode/agent/
 
 ```bash
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/opencode-rpi-system.git
+git clone https://github.com/obiwormxlii/opencode-rpi-system.git
 
 # Create symlinks
 ln -s "$(pwd)/opencode-rpi-system/agent" ~/.config/opencode/agent
@@ -144,7 +144,7 @@ ln -s "$(pwd)/opencode-rpi-system/command" ~/.config/opencode/command
 
 ```bash
 # Set repository URL
-export RPI_REPO_URL="https://github.com/YOUR_USERNAME/opencode-rpi-system.git"
+export RPI_REPO_URL="https://github.com/obiwormxlii/opencode-rpi-system.git"
 
 # Run setup
 ~/.config/opencode/scripts/sync-config.sh setup
@@ -198,8 +198,8 @@ MIT License - See LICENSE file for details
 ## Support
 
 - **Documentation**: See [docs/](docs/) directory
-- **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/opencode-rpi-system/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/YOUR_USERNAME/opencode-rpi-system/discussions)
+- **Issues**: [GitHub Issues](https://github.com/obiwormxlii/opencode-rpi-system/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/obiwormxlii/opencode-rpi-system/discussions)
 
 ## Version
 
