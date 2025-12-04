@@ -1,0 +1,102 @@
+# System Architecture Overview
+
+**Project**: [PROJECT_NAME]
+**Last Updated**: [UPDATE_DATE]
+
+## Executive Summary
+
+[EXECUTIVE_SUMMARY]
+
+## System Design
+
+### Architecture Pattern
+
+This project follows a **[ARCHITECTURE_PATTERN]** architecture.
+
+[ARCHITECTURE_DESCRIPTION]
+
+### High-Level Components
+
+[COMPONENTS_LIST]
+
+### Component Interactions
+
+[COMPONENT_INTERACTIONS]
+
+## System Diagram
+
+```mermaid
+[SYSTEM_DIAGRAM]
+```
+
+## Technology Stack
+
+### Backend
+- **Language/Framework**: [BACKEND_STACK]
+- **Runtime**: [BACKEND_RUNTIME]
+- **Key Libraries**: [BACKEND_LIBRARIES]
+
+### Frontend
+- **Framework**: [FRONTEND_STACK]
+- **Build Tool**: [BUILD_TOOL]
+- **Key Libraries**: [FRONTEND_LIBRARIES]
+
+### Database
+- **Type**: [DATABASE_TYPE]
+- **Version**: [DATABASE_VERSION]
+- **ORM/Query Builder**: [ORM]
+
+### Infrastructure
+- **Hosting**: [HOSTING_PLATFORM]
+- **Container**: [CONTAINER_TECH]
+- **CI/CD**: [CICD_PLATFORM]
+
+### External Services
+[EXTERNAL_SERVICES]
+
+## Data Flow
+
+### Request Lifecycle
+
+[REQUEST_LIFECYCLE]
+
+### Data Flow Diagram
+
+```mermaid
+[DATA_FLOW_DIAGRAM]
+```
+
+## Security Architecture
+
+[SECURITY_ARCHITECTURE]
+
+## Scalability Considerations
+
+[SCALABILITY_NOTES]
+
+## Performance Considerations
+
+[PERFORMANCE_NOTES]
+
+## Development Environment
+
+[DEV_ENVIRONMENT]
+
+## Deployment Architecture
+
+[DEPLOYMENT_ARCHITECTURE]
+
+## Architectural Decision Records (ADRs)
+
+[ADRS_SUMMARY]
+
+## Future Considerations
+
+[FUTURE_ARCHITECTURE]
+
+## Related Documentation
+
+- [Database Schema](database-schema.md) - Data model details
+- [API Design](api-design.md) - API endpoints and contracts
+- [Frontend Architecture](frontend-architecture.md) - UI component structure
+- [Infrastructure](infrastructure.md) - Deployment and DevOps

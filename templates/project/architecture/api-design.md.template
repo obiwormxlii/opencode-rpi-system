@@ -1,0 +1,142 @@
+# API Design
+
+**Project**: [PROJECT_NAME]
+**API Style**: [API_STYLE]
+**Last Updated**: [UPDATE_DATE]
+
+## API Overview
+
+[API_OVERVIEW]
+
+## Base Configuration
+
+- **Base URL**: [BASE_URL]
+- **Version**: [API_VERSION]
+- **Authentication**: [AUTH_METHOD]
+- **Content-Type**: [CONTENT_TYPE]
+
+## Authentication & Authorization
+
+[AUTH_DETAILS]
+
+### Authentication Flow
+
+[AUTH_FLOW]
+
+### Authorization Levels
+
+[AUTH_LEVELS]
+
+## API Endpoints
+
+[ENDPOINTS_SECTION]
+
+### [ENDPOINT_CATEGORY]
+
+#### [HTTP_METHOD] [ENDPOINT_PATH]
+
+**Description**: [ENDPOINT_DESCRIPTION]
+
+**Authentication**: [AUTH_REQUIRED]
+
+**Request**:
+
+```json
+[REQUEST_EXAMPLE]
+```
+
+**Response** (Success - [SUCCESS_CODE]):
+
+```json
+[SUCCESS_RESPONSE]
+```
+
+**Response** (Error - [ERROR_CODE]):
+
+```json
+[ERROR_RESPONSE]
+```
+
+**Validation Rules**:
+[VALIDATION_RULES]
+
+**Notes**:
+[ENDPOINT_NOTES]
+
+---
+
+## Error Handling
+
+### Standard Error Format
+
+```json
+{
+  "error": {
+    "code": "ERROR_CODE",
+    "message": "Human-readable error message",
+    "details": {},
+    "timestamp": "ISO 8601 timestamp"
+  }
+}
+```
+
+### Error Codes
+
+| Code | HTTP Status | Description |
+|------|-------------|-------------|
+[ERROR_CODES_TABLE]
+
+## Rate Limiting
+
+[RATE_LIMITING]
+
+## Pagination
+
+[PAGINATION_STRATEGY]
+
+### Example Paginated Response
+
+```json
+[PAGINATION_EXAMPLE]
+```
+
+## Filtering & Sorting
+
+[FILTERING_SORTING]
+
+## Versioning Strategy
+
+[VERSIONING_STRATEGY]
+
+## API Conventions
+
+### Naming Conventions
+[NAMING_CONVENTIONS]
+
+### Request/Response Format
+[FORMAT_CONVENTIONS]
+
+### Status Codes
+[STATUS_CODE_USAGE]
+
+## WebSocket Endpoints (if applicable)
+
+[WEBSOCKET_ENDPOINTS]
+
+## Webhooks (if applicable)
+
+[WEBHOOKS]
+
+## API Testing
+
+[API_TESTING_STRATEGY]
+
+## API Documentation
+
+[API_DOCS_LOCATION]
+
+## Related Documentation
+
+- [System Overview](overview.md) - High-level architecture
+- [Database Schema](database-schema.md) - Data models used in API
+- [Frontend Architecture](frontend-architecture.md) - How frontend consumes API

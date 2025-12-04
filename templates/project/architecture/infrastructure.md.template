@@ -1,0 +1,217 @@
+# Infrastructure & DevOps
+
+**Project**: [PROJECT_NAME]
+**Cloud Provider**: [CLOUD_PROVIDER]
+**Last Updated**: [UPDATE_DATE]
+
+## Infrastructure Overview
+
+[INFRASTRUCTURE_OVERVIEW]
+
+## Environments
+
+### Development
+- **URL**: [DEV_URL]
+- **Purpose**: [DEV_PURPOSE]
+- **Database**: [DEV_DATABASE]
+- **Configuration**: [DEV_CONFIG]
+
+### Staging
+- **URL**: [STAGING_URL]
+- **Purpose**: [STAGING_PURPOSE]
+- **Database**: [STAGING_DATABASE]
+- **Configuration**: [STAGING_CONFIG]
+
+### Production
+- **URL**: [PRODUCTION_URL]
+- **Purpose**: [PRODUCTION_PURPOSE]
+- **Database**: [PRODUCTION_DATABASE]
+- **Configuration**: [PRODUCTION_CONFIG]
+
+## Infrastructure Diagram
+
+```mermaid
+[INFRASTRUCTURE_DIAGRAM]
+```
+
+## Hosting & Deployment
+
+### Hosting Platform
+
+[HOSTING_PLATFORM_DETAILS]
+
+### Container Strategy
+
+[CONTAINER_STRATEGY]
+
+#### Dockerfile
+
+[DOCKERFILE_DESCRIPTION]
+
+#### Docker Compose
+
+[DOCKER_COMPOSE_DESCRIPTION]
+
+### Deployment Process
+
+[DEPLOYMENT_PROCESS]
+
+## CI/CD Pipeline
+
+### Pipeline Overview
+
+[CICD_OVERVIEW]
+
+### Pipeline Stages
+
+1. **[STAGE_NAME]**: [STAGE_DESCRIPTION]
+2. **[STAGE_NAME]**: [STAGE_DESCRIPTION]
+
+### CI/CD Configuration
+
+[CICD_CONFIG_LOCATION]
+
+### Automated Tests
+
+[AUTOMATED_TESTS]
+
+### Deployment Triggers
+
+[DEPLOYMENT_TRIGGERS]
+
+## Environment Variables
+
+### Required Variables
+
+[REQUIRED_ENV_VARS]
+
+### Environment-Specific Variables
+
+[ENV_SPECIFIC_VARS]
+
+### Secret Management
+
+[SECRET_MANAGEMENT]
+
+## Database Management
+
+### Database Hosting
+
+[DATABASE_HOSTING]
+
+### Migrations
+
+[MIGRATION_PROCESS]
+
+### Backups
+
+[BACKUP_STRATEGY]
+
+### Connection Pooling
+
+[CONNECTION_POOLING]
+
+## Monitoring & Logging
+
+### Application Monitoring
+
+[APP_MONITORING]
+
+### Error Tracking
+
+[ERROR_TRACKING]
+
+### Logging Strategy
+
+[LOGGING_STRATEGY]
+
+### Log Aggregation
+
+[LOG_AGGREGATION]
+
+### Alerts & Notifications
+
+[ALERTS]
+
+## Performance & Scaling
+
+### Load Balancing
+
+[LOAD_BALANCING]
+
+### Caching
+
+[CACHING_INFRASTRUCTURE]
+
+### CDN
+
+[CDN_STRATEGY]
+
+### Auto-scaling
+
+[AUTO_SCALING]
+
+## Security
+
+### SSL/TLS
+
+[SSL_TLS]
+
+### Firewall Rules
+
+[FIREWALL_RULES]
+
+### Access Control
+
+[ACCESS_CONTROL]
+
+### Security Scanning
+
+[SECURITY_SCANNING]
+
+## Disaster Recovery
+
+### Backup Strategy
+
+[BACKUP_STRATEGY_DETAILED]
+
+### Recovery Procedures
+
+[RECOVERY_PROCEDURES]
+
+### RTO/RPO
+
+[RTO_RPO]
+
+## Cost Management
+
+[COST_MANAGEMENT]
+
+## Infrastructure as Code
+
+[IAC_STRATEGY]
+
+## Local Development Setup
+
+[LOCAL_SETUP_INSTRUCTIONS]
+
+### Prerequisites
+
+[PREREQUISITES]
+
+### Setup Steps
+
+[SETUP_STEPS]
+
+### Running Locally
+
+[LOCAL_RUN_COMMANDS]
+
+## Troubleshooting
+
+[TROUBLESHOOTING_GUIDE]
+
+## Related Documentation
+
+- [System Overview](overview.md) - High-level architecture
+- [Database Schema](database-schema.md) - Database configuration details

@@ -1,0 +1,59 @@
+# Architecture Directory
+
+**Purpose**: Contains comprehensive architecture documentation for the [PROJECT_NAME] project.
+
+## Contents
+
+This directory documents the technical architecture and design decisions for the project:
+
+- **overview.md** - High-level system design, components, and technology stack
+- **database-schema.md** - Complete database schema with ERD and entity documentation
+- **api-design.md** - API endpoint specifications, authentication, and error handling
+- **frontend-architecture.md** - UI component structure, state management, and routing
+- **infrastructure.md** - Deployment, hosting, CI/CD, and DevOps procedures
+- **diagrams/** - Mermaid diagrams for system visualization
+
+## How to Use
+
+### For Developers
+
+When implementing features:
+1. Read **overview.md** first to understand the system design
+2. Check **database-schema.md** for data model details
+3. Review **api-design.md** for endpoint contracts
+4. Consult **frontend-architecture.md** for UI patterns
+5. Reference **infrastructure.md** for deployment procedures
+
+### For Agents (RPI Workflow)
+
+**Research Phase** (`/research`):
+- Always read architecture docs relevant to the task
+- Reference these docs in research snapshots
+- Use architecture context when analyzing code
+
+**Planning Phase** (`/planner`):
+- Align implementation plans with documented architecture
+- Reference specific architecture sections in plans
+- Ensure new code follows established patterns
+
+**Verification Phase** (`/verify`):
+- Check implementations against architectural standards
+- Validate that changes don't violate design principles
+- Ensure consistency with documented patterns
+
+## Updating Architecture Docs
+
+Architecture documentation should be updated when:
+- Major design decisions are made
+- New components or services are added
+- Database schema changes occur
+- API endpoints are added or modified
+- Infrastructure changes affect deployment
+
+Use `/project-update` to sync architecture docs with code changes.
+
+## Related Documentation
+
+- [Project Index](../INDEX.md) - Project overview and navigation
+- [Planning](../planning/) - Project roadmap and epics
+- [Standards](../../standards/custom-standards.md) - Coding standards

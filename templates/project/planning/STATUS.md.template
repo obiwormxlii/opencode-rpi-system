@@ -1,0 +1,44 @@
+# [CONTEXT_NAME] Status
+
+**Last Updated**: [UPDATE_DATE]
+**Overall Completion**: [COMPLETION_PERCENT]%
+
+## Current State
+
+**Status**: [STATUS]
+**Active Item**: [ACTIVE_ITEM]
+**Next Item**: [NEXT_ITEM]
+
+## Progress Summary
+
+**Completed**: [COMPLETED_COUNT] / [TOTAL_COUNT]
+**In Progress**: [IN_PROGRESS_COUNT]
+**Pending**: [PENDING_COUNT]
+**Blocked**: [BLOCKED_COUNT]
+
+## Detailed Progress
+
+### Completed ✓
+
+[COMPLETED_ITEMS]
+
+### In Progress 🔄
+
+[IN_PROGRESS_ITEMS]
+
+### Pending ⏳
+
+[PENDING_ITEMS]
+
+### Blocked 🚫
+
+[BLOCKED_ITEMS]
+
+## Recent Updates
+
+- [DATE]: [UPDATE_DESCRIPTION]
+- [DATE]: [UPDATE_DESCRIPTION]
+
+## Notes
+
+[NOTES]

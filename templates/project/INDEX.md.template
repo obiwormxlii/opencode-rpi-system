@@ -1,0 +1,59 @@
+# Project Index
+
+**Project Name**: [PROJECT_NAME]
+**Type**: [PROJECT_TYPE]
+**Initialized**: [INIT_DATE]
+**Last Updated**: [UPDATE_DATE]
+
+## Quick Navigation
+
+### Architecture
+- [System Overview](architecture/overview.md) - High-level system design
+- [Database Schema](architecture/database-schema.md) - Data model and relationships
+- [API Design](architecture/api-design.md) - Endpoint contracts and specifications
+- [Frontend Architecture](architecture/frontend-architecture.md) - UI component structure
+- [Infrastructure](architecture/infrastructure.md) - Deployment and DevOps
+
+### Planning
+- [Roadmap](planning/roadmap.md) - Project timeline and milestones
+- [Active Epics](planning/epics/) - Current work breakdown
+
+### Standards
+- [Coding Standards](../standards/custom-standards.md) - Project guidelines and principles
+
+## Technology Stack
+
+**Backend**: [BACKEND_STACK]
+**Frontend**: [FRONTEND_STACK]
+**Database**: [DATABASE]
+**Infrastructure**: [INFRASTRUCTURE]
+**CI/CD**: [CICD_PLATFORM]
+
+## Current Focus
+
+**Active Epic**: [ACTIVE_EPIC]
+**Current Phase**: [CURRENT_PHASE]
+**Next Milestone**: [NEXT_MILESTONE]
+
+## Project Health
+
+- **Completion**: [COMPLETION_PERCENT]% of roadmap
+- **Open Tasks**: [OPEN_TASKS] tasks
+- **Blocked Items**: [BLOCKED_ITEMS] blockers
+
+## Quick Commands
+
+```bash
+# Show current project status
+/project-status
+
+# Update project tracking after commits
+/project-update
+
+# Start RPI workflow on current task
+/rpi "implement [task-name]"
+```
+
+## Project History
+
+See `.history/` for historical snapshots of roadmap and epic changes.

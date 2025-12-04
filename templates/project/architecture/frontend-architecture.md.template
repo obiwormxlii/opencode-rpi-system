@@ -1,0 +1,196 @@
+# Frontend Architecture
+
+**Project**: [PROJECT_NAME]
+**Framework**: [FRONTEND_FRAMEWORK]
+**Last Updated**: [UPDATE_DATE]
+
+## Frontend Overview
+
+[FRONTEND_OVERVIEW]
+
+## Technology Stack
+
+- **Framework**: [FRAMEWORK]
+- **Build Tool**: [BUILD_TOOL]
+- **Package Manager**: [PACKAGE_MANAGER]
+- **Styling**: [STYLING_SOLUTION]
+- **State Management**: [STATE_MANAGEMENT]
+- **Routing**: [ROUTING_SOLUTION]
+- **Testing**: [TESTING_FRAMEWORKS]
+
+## Project Structure
+
+```
+[DIRECTORY_STRUCTURE]
+```
+
+## Component Architecture
+
+### Design System
+
+This project follows **[DESIGN_PATTERN]** (e.g., Atomic Design, Feature-based, etc.)
+
+[DESIGN_SYSTEM_DESCRIPTION]
+
+### Component Hierarchy
+
+```mermaid
+[COMPONENT_HIERARCHY_DIAGRAM]
+```
+
+### Component Categories
+
+[COMPONENT_CATEGORIES]
+
+#### Atoms
+[ATOMS_LIST]
+
+#### Molecules
+[MOLECULES_LIST]
+
+#### Organisms
+[ORGANISMS_LIST]
+
+#### Templates
+[TEMPLATES_LIST]
+
+#### Pages
+[PAGES_LIST]
+
+## State Management
+
+[STATE_MANAGEMENT_DETAILS]
+
+### Global State
+
+[GLOBAL_STATE]
+
+### Local State
+
+[LOCAL_STATE]
+
+### State Diagram
+
+```mermaid
+[STATE_DIAGRAM]
+```
+
+## Routing
+
+[ROUTING_DETAILS]
+
+### Route Structure
+
+[ROUTE_STRUCTURE]
+
+### Protected Routes
+
+[PROTECTED_ROUTES]
+
+## Data Fetching
+
+[DATA_FETCHING_STRATEGY]
+
+### API Integration
+
+[API_INTEGRATION]
+
+### Caching Strategy
+
+[CACHING_STRATEGY]
+
+## Styling Conventions
+
+[STYLING_CONVENTIONS]
+
+### Theme Configuration
+
+[THEME_CONFIG]
+
+### CSS Architecture
+
+[CSS_ARCHITECTURE]
+
+### Responsive Design
+
+[RESPONSIVE_STRATEGY]
+
+## Component Guidelines
+
+### Component Naming
+[NAMING_CONVENTIONS]
+
+### Props Patterns
+[PROPS_PATTERNS]
+
+### Event Handling
+[EVENT_HANDLING]
+
+### Error Boundaries
+[ERROR_BOUNDARIES]
+
+## Performance Optimization
+
+[PERFORMANCE_OPTIMIZATION]
+
+### Code Splitting
+
+[CODE_SPLITTING]
+
+### Lazy Loading
+
+[LAZY_LOADING]
+
+### Memoization
+
+[MEMOIZATION_STRATEGY]
+
+## Authentication Flow
+
+[AUTH_FLOW_FRONTEND]
+
+## Form Handling
+
+[FORM_HANDLING]
+
+### Validation
+
+[VALIDATION_STRATEGY]
+
+## Testing Strategy
+
+[TESTING_STRATEGY]
+
+### Unit Tests
+[UNIT_TESTS]
+
+### Integration Tests
+[INTEGRATION_TESTS]
+
+### E2E Tests
+[E2E_TESTS]
+
+## Build & Bundle
+
+[BUILD_CONFIGURATION]
+
+### Development Build
+
+[DEV_BUILD]
+
+### Production Build
+
+[PROD_BUILD]
+
+## Accessibility (a11y)
+
+[ACCESSIBILITY_STANDARDS]
+
+## Browser Support
+
+[BROWSER_SUPPORT]
+
+## Related Documentation
+
+- [System Overview](overview.md) - High-level architecture
+- [API Design](api-design.md) - Backend API endpoints consumed by frontend

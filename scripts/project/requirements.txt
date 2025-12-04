@@ -1,0 +1,26 @@
+# Project Analysis Scripts Dependencies
+# Install with: pip install -r requirements.txt
+
+# Git repository analysis
+GitPython>=3.1.40
+
+# JSON and file handling (built-in, listed for documentation)
+# json, pathlib, os, re
+
+# AST parsing for code analysis (built-in)
+# ast
+
+# SQL parsing for schema extraction
+sqlparse>=0.4.4
+
+# YAML parsing for config files
+PyYAML>=6.0.1
+
+# TOML parsing (pyproject.toml, Cargo.toml)
+tomli>=2.0.1; python_version < '3.11'
+
+# Markdown generation
+markdown>=3.5
+
+# Date/time handling (built-in, listed for documentation)
+# datetime

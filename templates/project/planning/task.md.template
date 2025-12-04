@@ -1,0 +1,118 @@
+# Task [TASK_NUMBER]: [TASK_TITLE]
+
+**Epic**: [EPIC_NUMBER]-[EPIC_NAME]
+**Phase**: [PHASE_NUMBER]-[PHASE_NAME]
+**Estimated Effort**: 1 RPI session
+**Status**: pending
+**Created**: [CREATED_DATE]
+**Last Updated**: [UPDATE_DATE]
+
+## Goal
+
+[TASK_GOAL_DESCRIPTION]
+
+## Context
+
+[TASK_CONTEXT]
+
+### Why This Task Is Needed
+
+[TASK_RATIONALE]
+
+### Dependencies
+
+**Depends On**: [DEPENDENT_TASKS]
+**Blocks**: [BLOCKED_TASKS]
+
+## Implementation Approach
+
+[HIGH_LEVEL_APPROACH]
+
+### Key Files to Modify/Create
+
+[KEY_FILES]
+
+### Integration Points
+
+[INTEGRATION_POINTS]
+
+## Acceptance Criteria
+
+- [ ] [CRITERION_1]
+- [ ] [CRITERION_2]
+- [ ] [CRITERION_3]
+- [ ] Tests passing
+- [ ] Documentation updated
+- [ ] Code reviewed
+- [ ] Verification passed
+
+## Technical Details
+
+### Related Architecture
+
+[RELATED_ARCHITECTURE_DOCS]
+
+### API Endpoints (if applicable)
+
+[API_ENDPOINTS]
+
+### Database Changes (if applicable)
+
+[DATABASE_CHANGES]
+
+### UI Components (if applicable)
+
+[UI_COMPONENTS]
+
+## Testing Requirements
+
+### Unit Tests
+
+[UNIT_TEST_REQUIREMENTS]
+
+### Integration Tests
+
+[INTEGRATION_TEST_REQUIREMENTS]
+
+### Manual Testing
+
+[MANUAL_TEST_STEPS]
+
+## Security Considerations
+
+[SECURITY_CONSIDERATIONS]
+
+## Performance Considerations
+
+[PERFORMANCE_CONSIDERATIONS]
+
+## Rollback Plan
+
+[ROLLBACK_PLAN]
+
+## Notes
+
+[NOTES]
+
+### Gotchas
+
+[GOTCHAS]
+
+### Useful Links
+
+[USEFUL_LINKS]
+
+## RPI Sessions
+
+### Session 1: [DATE]
+
+**Status**: [SESSION_STATUS]
+**Notes**: [SESSION_NOTES]
+**Outcome**: [SESSION_OUTCOME]
+
+---
+
+## Related Documentation
+
+- [Epic Overview](../overview.md) - Parent epic
+- [Roadmap](../../../roadmap.md) - Project timeline

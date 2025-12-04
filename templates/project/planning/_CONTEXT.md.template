@@ -1,0 +1,108 @@
+# Planning Directory
+
+**Purpose**: Contains project planning, roadmap, and work breakdown structure for [PROJECT_NAME].
+
+## Contents
+
+This directory organizes the project into manageable, day-sized tasks:
+
+- **roadmap.md** - High-level project timeline, milestones, and epic overview
+- **epics/** - Feature breakdown into epics, phases, and tasks
+- **.history/** - Historical snapshots of planning documents (auto-generated)
+
+## Structure
+
+```
+planning/
+├── roadmap.md                    # Overall project timeline
+├── .history/                     # Historical snapshots
+└── epics/
+    ├── epic-001-[name]/
+    │   ├── overview.md           # Epic description and goals
+    │   ├── STATUS.md             # Epic progress tracking
+    │   ├── _CONTEXT.md           # Epic-specific context
+    │   ├── phase-1-[name]/
+    │   │   ├── task-001-[name].md
+    │   │   ├── task-002-[name].md
+    │   │   └── ...
+    │   └── phase-2-[name]/
+    │       └── ...
+    └── epic-002-[name]/
+        └── ...
+```
+
+## Workflow
+
+### Epic Structure
+
+**Epic** = Large feature or capability (e.g., "Authentication System")
+- Contains multiple phases
+- Has clear success criteria
+- Represents 1-2 weeks of work
+
+**Phase** = Logical implementation sequence within an epic (e.g., "Backend", "Frontend")
+- Contains multiple tasks
+- Phases usually completed sequentially
+- Represents 2-5 days of work
+
+**Task** = Single day's work, optimized for one RPI session
+- Atomic and self-contained
+- Has clear acceptance criteria
+- Estimated at 1 RPI session duration
+
+### Task States
+
+- **pending** - Not started yet
+- **in_progress** - Currently being worked on
+- **completed** - Finished and verified
+- **blocked** - Waiting on dependencies
+
+### Working with Tasks
+
+1. **Find Next Task**: Check `roadmap.md` "Current Focus" section or run `/project-status`
+2. **Start Task**: Run `/rpi "implement task-NNN"`
+3. **Complete Task**: Commit with message like `feat: complete task-001 - user authentication`
+4. **Track Progress**: Run `/project-update` to sync status (or auto-updates after commits)
+
+## Auto-Update System
+
+The project tracking system automatically updates when you:
+- Complete a task (commit message includes "complete task-NNN" or "closes #task-NNN")
+- Finish an epic (commit message includes "epic complete" or "milestone")
+- Make significant changes (commit includes "feat: complete X")
+
+Manual updates: `/project-update`
+
+## For Agents (RPI Workflow)
+
+**Research Phase** (`/research`):
+- Check current epic/phase/task in roadmap
+- Read task file for context and requirements
+- Use task acceptance criteria to guide research
+
+**Planning Phase** (`/planner`):
+- Reference specific task being implemented
+- Align plan with task acceptance criteria
+- Break task into atomic implementation steps
+
+**Implementation Phase** (`/implement`):
+- Follow task acceptance criteria
+- Update task STATUS.md on completion
+- Add RPI session notes to task file
+
+**Verification Phase** (`/verify`):
+- Validate against task acceptance criteria
+- Check epic-specific requirements
+
+## History Tracking
+
+The `.history/` directory contains snapshots of planning documents:
+- Created automatically on major milestones
+- Timestamped for audit trail
+- Useful for "what changed" analysis
+
+## Related Documentation
+
+- [Project Index](../INDEX.md) - Project overview
+- [Architecture](../architecture/) - System design and technical docs
+- [Roadmap](roadmap.md) - Start here for current project status

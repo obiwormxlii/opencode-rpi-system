@@ -1,0 +1,93 @@
+# Database Schema
+
+**Project**: [PROJECT_NAME]
+**Database**: [DATABASE_TYPE]
+**Last Updated**: [UPDATE_DATE]
+
+## Schema Overview
+
+[SCHEMA_OVERVIEW]
+
+## Entity Relationship Diagram
+
+```mermaid
+erDiagram
+[ERD_CONTENT]
+```
+
+## Entities
+
+[ENTITIES_SECTION]
+
+### [ENTITY_NAME]
+
+**Description**: [ENTITY_DESCRIPTION]
+
+**Table Name**: `[TABLE_NAME]`
+
+#### Fields
+
+| Field | Type | Constraints | Description |
+|-------|------|-------------|-------------|
+[ENTITY_FIELDS]
+
+#### Relationships
+
+[ENTITY_RELATIONSHIPS]
+
+#### Indexes
+
+[ENTITY_INDEXES]
+
+#### Example
+
+```sql
+[EXAMPLE_SQL]
+```
+
+---
+
+## Relationships Summary
+
+[RELATIONSHIPS_SUMMARY]
+
+## Migration Strategy
+
+[MIGRATION_STRATEGY]
+
+### Current Migration State
+
+[MIGRATION_STATE]
+
+## Database Conventions
+
+### Naming Conventions
+[NAMING_CONVENTIONS]
+
+### Type Conventions
+[TYPE_CONVENTIONS]
+
+## Performance Considerations
+
+### Indexes
+[INDEX_STRATEGY]
+
+### Query Optimization
+[QUERY_OPTIMIZATION]
+
+## Data Integrity
+
+### Constraints
+[CONSTRAINTS]
+
+### Validation
+[VALIDATION_RULES]
+
+## Backup & Recovery
+
+[BACKUP_STRATEGY]
+
+## Related Documentation
+
+- [System Overview](overview.md) - High-level architecture
+- [API Design](api-design.md) - How APIs interact with database

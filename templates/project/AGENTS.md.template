@@ -1,0 +1,111 @@
+# Project Agent Instructions
+
+**Project**: [PROJECT_NAME]
+**Last Updated**: [UPDATE_DATE]
+
+## Project Overview
+
+[PROJECT_DESCRIPTION]
+
+**Primary Goal**: [PRIMARY_GOAL]
+**Target Users**: [TARGET_USERS]
+**Scale**: [SCALE_EXPECTATIONS]
+
+## Architecture Context
+
+This project uses a **[ARCHITECTURE_PATTERN]** architecture with the following structure:
+
+### Technology Stack
+- **Backend**: [BACKEND_STACK] - [BACKEND_DESCRIPTION]
+- **Frontend**: [FRONTEND_STACK] - [FRONTEND_DESCRIPTION]
+- **Database**: [DATABASE] - [DATABASE_DESCRIPTION]
+- **Infrastructure**: [INFRASTRUCTURE] - [INFRASTRUCTURE_DESCRIPTION]
+
+### Key Architectural Decisions
+
+[ARCHITECTURAL_DECISIONS]
+
+### Important Files & Directories
+
+[KEY_DIRECTORIES]
+
+## Development Workflow
+
+### Standard RPI Workflow
+
+When implementing features, always follow the RPI methodology:
+
+1. **Research** (`/research`) - Understand the codebase and requirements
+   - Read `.opencode/project/architecture/` docs for system context
+   - Check current epic/phase/task in `.opencode/project/planning/`
+   - Analyze existing patterns and conventions
+
+2. **Plan** (`/planner`) - Create detailed implementation plan
+   - Reference task acceptance criteria from `.opencode/project/planning/epics/`
+   - Align with architectural patterns documented in architecture docs
+   - Break into atomic, testable steps
+
+3. **Implement** (`/implement`) - Execute the plan
+   - Follow project coding standards in `.opencode/standards/custom-standards.md`
+   - Update task STATUS after completion
+   - Run verification before committing
+
+4. **Verify** (`/verify`) - Validate against standards
+   - Check SOLID principles
+   - Verify security requirements
+   - Ensure type safety and test coverage
+
+### Project-Specific Considerations
+
+[PROJECT_SPECIFIC_GUIDELINES]
+
+## Current Project State
+
+**Active Epic**: [ACTIVE_EPIC]
+**Current Phase**: [CURRENT_PHASE]
+**Next Task**: [NEXT_TASK]
+
+See `.opencode/project/planning/roadmap.md` for complete project timeline.
+
+## Custom Agents
+
+[CUSTOM_AGENTS_DESCRIPTION]
+
+## Database Schema
+
+[DATABASE_SCHEMA_SUMMARY]
+
+See `.opencode/project/architecture/database-schema.md` for complete schema documentation.
+
+## API Conventions
+
+[API_CONVENTIONS]
+
+See `.opencode/project/architecture/api-design.md` for endpoint specifications.
+
+## Frontend Patterns
+
+[FRONTEND_PATTERNS]
+
+See `.opencode/project/architecture/frontend-architecture.md` for component hierarchy.
+
+## Testing Strategy
+
+[TESTING_STRATEGY]
+
+## Deployment & CI/CD
+
+[DEPLOYMENT_DESCRIPTION]
+
+See `.opencode/project/architecture/infrastructure.md` for deployment procedures.
+
+## Common Pitfalls
+
+[COMMON_PITFALLS]
+
+## Questions?
+
+Refer to:
+- Architecture documentation in `.opencode/project/architecture/`
+- Current roadmap in `.opencode/project/planning/roadmap.md`
+- Coding standards in `.opencode/standards/custom-standards.md`

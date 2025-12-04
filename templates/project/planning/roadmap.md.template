@@ -1,0 +1,109 @@
+# Project Roadmap
+
+**Project**: [PROJECT_NAME]
+**Last Updated**: [UPDATE_DATE]
+**Overall Completion**: [COMPLETION_PERCENT]%
+
+## Project Vision
+
+[PROJECT_VISION]
+
+## MVP Definition
+
+[MVP_DEFINITION]
+
+### MVP Success Criteria
+
+[MVP_CRITERIA]
+
+## Epics Overview
+
+[EPICS_OVERVIEW]
+
+## Epic Timeline
+
+```mermaid
+gantt
+    title Project Timeline
+    dateFormat YYYY-MM-DD
+    [GANTT_CHART]
+```
+
+## Epics Detail
+
+### Epic 001: [EPIC_NAME]
+
+**Status**: [STATUS]
+**Completion**: [EPIC_COMPLETION]%
+**Goal**: [EPIC_GOAL]
+
+**Phases**:
+- Phase 1: [PHASE_1_NAME] - [PHASE_1_STATUS]
+- Phase 2: [PHASE_2_NAME] - [PHASE_2_STATUS]
+
+**Dependencies**: [DEPENDENCIES]
+
+**See**: [epics/epic-001-[epic-slug]/overview.md](epics/epic-001-[epic-slug]/overview.md)
+
+---
+
+### Epic 002: [EPIC_NAME]
+
+**Status**: [STATUS]
+**Completion**: [EPIC_COMPLETION]%
+**Goal**: [EPIC_GOAL]
+
+**Phases**:
+- Phase 1: [PHASE_1_NAME] - [PHASE_1_STATUS]
+- Phase 2: [PHASE_2_NAME] - [PHASE_2_STATUS]
+
+**Dependencies**: [DEPENDENCIES]
+
+**See**: [epics/epic-002-[epic-slug]/overview.md](epics/epic-002-[epic-slug]/overview.md)
+
+---
+
+## Current Focus
+
+**Active Epic**: [ACTIVE_EPIC]
+**Current Phase**: [CURRENT_PHASE]
+**Current Task**: [CURRENT_TASK]
+**Next Task**: [NEXT_TASK]
+
+## Milestones
+
+### Milestone 1: [MILESTONE_NAME]
+- **Target**: [TARGET_DATE]
+- **Status**: [MILESTONE_STATUS]
+- **Included Epics**: [MILESTONE_EPICS]
+- **Description**: [MILESTONE_DESCRIPTION]
+
+### Milestone 2: [MILESTONE_NAME]
+- **Target**: [TARGET_DATE]
+- **Status**: [MILESTONE_STATUS]
+- **Included Epics**: [MILESTONE_EPICS]
+- **Description**: [MILESTONE_DESCRIPTION]
+
+## Blocked Items
+
+[BLOCKED_ITEMS]
+
+## Completed Epics
+
+[COMPLETED_EPICS]
+
+## Future Considerations
+
+[FUTURE_FEATURES]
+
+## Project Risks
+
+[PROJECT_RISKS]
+
+## Change Log
+
+See `.history/` directory for historical snapshots of this roadmap.
+
+Recent changes:
+- [DATE]: [CHANGE_DESCRIPTION]
+- [DATE]: [CHANGE_DESCRIPTION]

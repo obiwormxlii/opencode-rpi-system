@@ -1,0 +1,108 @@
+# Epic [EPIC_NUMBER]: [EPIC_NAME]
+
+**Status**: [STATUS]
+**Created**: [CREATED_DATE]
+**Last Updated**: [UPDATE_DATE]
+**Completion**: [COMPLETION_PERCENT]%
+
+## Epic Goal
+
+[EPIC_GOAL_DESCRIPTION]
+
+## Success Criteria
+
+- [ ] [CRITERION_1]
+- [ ] [CRITERION_2]
+- [ ] [CRITERION_3]
+
+## Context & Motivation
+
+[CONTEXT_DESCRIPTION]
+
+## Dependencies
+
+**Depends On**: [DEPENDENT_EPICS]
+**Blocks**: [BLOCKED_EPICS]
+
+## Phases Overview
+
+### Phase 1: [PHASE_1_NAME]
+
+**Goal**: [PHASE_1_GOAL]
+**Status**: [PHASE_1_STATUS]
+**Completion**: [PHASE_1_COMPLETION]%
+
+**Tasks**:
+- [task-001-[task-slug].md](phase-1-[phase-slug]/task-001-[task-slug].md) - [TASK_STATUS]
+- [task-002-[task-slug].md](phase-1-[phase-slug]/task-002-[task-slug].md) - [TASK_STATUS]
+
+---
+
+### Phase 2: [PHASE_2_NAME]
+
+**Goal**: [PHASE_2_GOAL]
+**Status**: [PHASE_2_STATUS]
+**Completion**: [PHASE_2_COMPLETION]%
+
+**Tasks**:
+- [task-001-[task-slug].md](phase-2-[phase-slug]/task-001-[task-slug].md) - [TASK_STATUS]
+- [task-002-[task-slug].md](phase-2-[phase-slug]/task-002-[task-slug].md) - [TASK_STATUS]
+
+---
+
+## Technical Approach
+
+[TECHNICAL_APPROACH]
+
+## Architecture Impact
+
+[ARCHITECTURE_IMPACT]
+
+### Affected Components
+
+[AFFECTED_COMPONENTS]
+
+### New Components
+
+[NEW_COMPONENTS]
+
+## Security Considerations
+
+[SECURITY_CONSIDERATIONS]
+
+## Testing Strategy
+
+[TESTING_STRATEGY]
+
+## Rollback Plan
+
+[ROLLBACK_PLAN]
+
+## Performance Considerations
+
+[PERFORMANCE_CONSIDERATIONS]
+
+## Documentation Updates
+
+[DOCUMENTATION_UPDATES]
+
+## Current Status
+
+**Active Phase**: [ACTIVE_PHASE]
+**Active Task**: [ACTIVE_TASK]
+**Next Task**: [NEXT_TASK]
+
+**Completed Tasks**: [COMPLETED_TASKS_COUNT] / [TOTAL_TASKS_COUNT]
+
+## Blockers
+
+[BLOCKERS]
+
+## Notes
+
+[NOTES]
+
+## Related Documentation
+
+- [Roadmap](../../roadmap.md) - Overall project timeline
+- [Architecture Overview](../../../architecture/overview.md) - System architecture
