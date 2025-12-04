@@ -5,7 +5,7 @@
 set -e
 
 CONFIG_DIR="$HOME/.config/opencode"
-REPO_URL="${RPI_REPO_URL:-}"  # Set this via environment variable or edit here
+REPO_URL="${RPI_REPO_URL:-https://github.com/obiwormxlii/opencode-rpi-system.git}"  # Default repo URL
 
 usage() {
     echo "Usage: sync-config.sh [command]"
