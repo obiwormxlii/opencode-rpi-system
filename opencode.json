@@ -104,6 +104,63 @@
         "edit": false,
         "bash": false
       }
+    },
+    
+    "project-architect": {
+      "description": "Guide greenfield project initialization through structured interview",
+      "mode": "subagent",
+      "model": "anthropic/claude-opus-4-5",
+      "temperature": 0.3,
+      "prompt": "{file:~/.config/opencode/prompt/project-architect.txt}",
+      "tools": {
+        "read": true,
+        "write": true,
+        "bash": true,
+        "grep": true,
+        "glob": true,
+        "list": true,
+        "edit": false,
+        "webfetch": false,
+        "task": false
+      }
+    },
+    
+    "project-archaeologist": {
+      "description": "Analyze existing codebase and reverse-engineer architecture docs",
+      "mode": "subagent",
+      "model": "anthropic/claude-opus-4-5",
+      "temperature": 0.1,
+      "prompt": "{file:~/.config/opencode/prompt/project-archaeologist.txt}",
+      "tools": {
+        "read": true,
+        "write": true,
+        "bash": true,
+        "grep": true,
+        "glob": true,
+        "list": true,
+        "edit": false,
+        "webfetch": false,
+        "task": true
+      }
+    },
+    
+    "project-manager": {
+      "description": "Track and update project progress, manage task completion",
+      "mode": "subagent",
+      "model": "anthropic/claude-sonnet-4-5",
+      "temperature": 0.1,
+      "prompt": "{file:~/.config/opencode/prompt/project-manager.txt}",
+      "tools": {
+        "read": true,
+        "write": true,
+        "bash": true,
+        "grep": true,
+        "glob": true,
+        "list": true,
+        "edit": true,
+        "webfetch": false,
+        "task": false
+      }
     }
   },
   
@@ -131,7 +188,7 @@
     "implement": {
       "description": "Execute implementation plan",
       "agent": "implement",
-      "template": "I'll execute the plan step-by-step, marking progress in the todo list.\n\nFirst, let me check for any CRITICAL issues in the verification report.\n\nReady to begin?"
+      "template": "I'll execute the plan step-by-step, marking progress in the todo list.\n\nFirst, let me check for any CRITICAL issues in the verification report.\n\nAfter implementation completes:\n1. Run verify agent (quality checks)\n2. If .opencode/project/ exists: Auto-trigger project-manager to update task status\n\nReady to begin?"
     },
     
     "verify": {
@@ -146,6 +203,24 @@
       "agent": "research",
       "subtask": true,
       "template": "I'll compress our conversation into a research snapshot for continuity.\n\nUse this when context gets long or switching to a new topic."
+    },
+    
+    "project-init": {
+      "description": "Initialize comprehensive project structure (greenfield or brownfield)",
+      "agent": "build",
+      "template": "{file:~/.config/opencode/command/project-init.md}"
+    },
+    
+    "project-update": {
+      "description": "Update project progress and task completion status",
+      "agent": "build",
+      "template": "{file:~/.config/opencode/command/project-update.md}"
+    },
+    
+    "project-status": {
+      "description": "Display current project progress and status summary",
+      "agent": "build",
+      "template": "{file:~/.config/opencode/command/project-status.md}"
     }
   }
 }
